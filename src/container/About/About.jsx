@@ -20,7 +20,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head-text header-text">
         {" "}
         I Know That <span>Good design</span>
         <br />
