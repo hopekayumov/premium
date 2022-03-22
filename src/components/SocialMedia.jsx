@@ -3,22 +3,42 @@ import { FaTelegram } from "react-icons/fa";
 import { ImGithub } from "react-icons/im";
 import { GrLinkedin } from "react-icons/gr";
 
+import { motion } from "framer-motion";
+
 const SocialMedia = () => (
   <div className="app__social">
     {/* Telegram */}
-    <a href="https://t.me/algorithm_uz" target="_blank" rel="noreferrer">
+    <motion.a
+      whileInView={{ opacity: 1 }}
+      whileHover={{ scale: 1.2 }}
+      transition={{ duration: 0.5, type: "tween" }}
+      href="https://t.me/algorithm_uz"
+      target="_blank"
+      rel="noreferrer"
+    >
       <div>
         <FaTelegram />
       </div>
-    </a>
+    </motion.a>
+
     {/* Github */}
-    <a href="https://github.com/hopekayumov" target="_blank" rel="noreferrer">
+    <motion.a
+      whileInView={{ opacity: 1 }}
+      whileHover={{ scale: 1.2 }}
+      transition={{ duration: 0.5, type: "tween" }}
+      href="https://github.com/hopekayumov"
+      target="_blank"
+      rel="noreferrer"
+    >
       <div>
         <ImGithub />
       </div>
-    </a>
+    </motion.a>
     {/* LinkedIn */}
-    <a
+    <motion.a
+      whileInView={{ opacity: 1 }}
+      whileHover={{ scale: 1.2 }}
+      transition={{ duration: 0.5, type: "tween" }}
       href="https://LinkedIn.com/in/hopekayumov"
       target="_blank"
       rel="noreferrer"
@@ -26,7 +46,7 @@ const SocialMedia = () => (
       <div>
         <GrLinkedin />
       </div>
-    </a>
+    </motion.a>
   </div>
 );
 

@@ -106,12 +106,13 @@
   padding: 1rem;
 
   div {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: var(--white-color);
+
     margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
 
     display: flex;
     justify-content: center;
@@ -130,7 +131,7 @@
       border-color: var(--secondary-color);
 
       svg {
-        color: var(--white-color);
+        color: var(--secondary-color);
       }
     }
 

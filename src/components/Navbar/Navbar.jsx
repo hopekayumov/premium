@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { GrCloudDownload } from "react-icons/gr";
 
 import { images } from "../../constants";
+
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -21,6 +23,17 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      {/* Button */}
+
+      <motion.button
+        whileInView={{ opacity: 1 }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.5, type: "tween" }}
+        className="app__navbar-btn"
+      >
+        <GrCloudDownload color="#fff" style={{ marginRight: 6 }} />
+        Resume
+      </motion.button>
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />

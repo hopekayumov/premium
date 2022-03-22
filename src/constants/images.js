@@ -37,8 +37,10 @@ import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 import mub from "../assets/mub.svg";
+import muBig from "../assets/muBig.png";
 
 export default {
+  muBig,
   vueSVG,
   reactSVG,
   mub,

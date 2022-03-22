@@ -14,7 +14,24 @@
   position: fixed;
   z-index: 2;
 }
+.app__navbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(132.95deg, #ffc301 9.31%, #ff6533 79.4%);
+  box-shadow: 15px 15px 35px rgba(226, 142, 15, 0.18);
+  border-radius: 10px;
+  padding: 5px 18px;
+  border: none;
+  font-size: 17px;
+  line-height: 175.4%;
+  letter-spacing: 0.02em;
+  color: #f4f4f4;
 
+  svg {
+    color: #f4f4f4 important;
+  }
+}
 .app__navbar-logo {
   display: flex;
   justify-content: flex-start;
