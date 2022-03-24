@@ -37,7 +37,7 @@ import skype from "../assets/skype.png";
 import mub from "../assets/mub.svg";
 import muBig from "../assets/muBig.png";
 
-export default {
+const images = {
   muBig,
   vueSVG,
   reactSVG,
@@ -74,3 +74,5 @@ export default {
   nb,
   skype,
 };
+
+export default images;
