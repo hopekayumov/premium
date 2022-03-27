@@ -34,10 +34,10 @@ const Header = () => (
 
         <div className="tag-cmp app__flex">
           <p className="p-text" style={{ fontWeight: "bold" }}>
-            Frontend Developer
+            Фронтенд разработчик
           </p>
           <p className="p-text" style={{ fontWeight: "bold" }}>
-            Freelancer
+            Дизайнер
           </p>
         </div>
       </div>
