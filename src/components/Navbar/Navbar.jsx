@@ -6,6 +6,7 @@ import { GrCloudDownload } from "react-icons/gr";
 import { images } from "../../constants";
 
 import "./Navbar.scss";
+import Button from "../../shared/Button/Button";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -25,15 +26,10 @@ const Navbar = () => {
       </ul>
       {/* Button */}
 
-      <motion.button
-        whileInView={{ opacity: 1 }}
-        whileHover={{ scale: 1.1 }}
-        transition={{ duration: 0.5, type: "tween" }}
-        className="app__navbar-btn"
-      >
-        <GrCloudDownload color="#fff" style={{ marginRight: 6 }} />
-        Resume
-      </motion.button>
+      <Button
+        text="Resume"
+        icon={<GrCloudDownload style={{ marginRight: 8 }} />}
+      />
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
