@@ -36,8 +36,10 @@ import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import mub from "../assets/mub.svg";
 import muBig from "../assets/muBig.png";
+import vsCode from "../assets/vscode.png";
 
 const images = {
+  vsCode,
   muBig,
   vueSVG,
   reactSVG,

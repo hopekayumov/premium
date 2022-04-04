@@ -41,7 +41,7 @@ const Navbar = () => {
       {/* Button */}
 
       <Button
-        text="Резюме"
+        text="Resume"
         icon={<GrCloudDownload style={{ marginRight: 8 }} />}
       />
 
