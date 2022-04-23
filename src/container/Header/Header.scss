@@ -1,6 +1,6 @@
 #home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
+  background: url("../../assets/bigIMG.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -22,7 +22,6 @@
   flex-direction: row;
 
   padding: 6rem 2rem 0rem;
-
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
   }
@@ -53,7 +52,7 @@
 }
 
 .app__header-badge {
-  
+  z-index: 2;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -69,6 +68,7 @@
     width: auto;
 
     border-radius: 25px;
+    z-index: 0;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
     box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
   }
@@ -173,8 +173,6 @@
 
 .app__header-img {
   flex: 1;
-  height: 100%;
-
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -188,13 +186,11 @@
 
   .overlay_circle {
     position: absolute;
-    top: -300px;
+    top: -60px;
     left: 0px;
     right: 0;
     bottom: 0;
     z-index: 0;
-    width: 340px;
-    height: 90%;
   }
 
   @media screen and (max-width: 1200px) {
