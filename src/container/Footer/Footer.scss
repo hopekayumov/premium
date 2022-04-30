@@ -18,8 +18,9 @@
 
   .app__footer-card {
     border-radius: 50px;
-    background: #fffafa;
-    box-shadow: 20px 20px 60px #e8e4e4, -20px -20px 60px #ffffff;
+    background: linear-gradient(315deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #F0F1F5;
+    background-blend-mode: soft-light, normal;
+    box-shadow: -8.90123px -8.90123px 26.7037px #FFFFFF, 13.3518px 13.3518px 26.7037px rgba(174, 174, 192, 0.4);
     min-width: 290px;
     display: flex;
     flex-direction: row;
@@ -33,12 +34,6 @@
     background-color: #fef4f5;
 
     transition: all 0.3s ease-in-out;
-
-    img {
-      width: 40px;
-      height: 40px;
-      margin: 0 0.7rem;
-    }
 
     p {
       font-weight: 500;
@@ -61,13 +56,32 @@
   }
 }
 
+.app__footer-card:first-child {
+  img {
+    width: 35px;
+    height: 35px;
+    margin: 0 0.7rem;
+    background: linear-gradient(154.47deg, #FF668B 0%, #F55353 87.01%);
+    box-shadow: 11.3333px 11.3333px 11.3333px rgba(245, 83, 83, 0.2), 32.6667px 32.6667px 32.6667px rgba(245, 83, 83, 0.1), 96.667px 96.667px 96.667px rgba(245, 83, 83, 0.1), inset -10.6667px 0px 10.6667px rgba(0, 0, 0, 0.02), inset 10.6667px 0px 10.6667px rgba(0, 0, 0, 0.02), inset 0px -10.6667px 10.6667px rgba(0, 0, 0, 0.05), inset 0px 5.33333px 5.33333px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+}
+
+.app__footer-card:last-child {
+  img {
+    width: 35px;
+    height: 35px;
+    margin: 0 0.7rem;
+    background: linear-gradient(154.47deg, #38F8B2 0%, #14E380 87.01%, #14E380 87.01%);
+    box-shadow: 11.3333px 11.3333px 11.3333px rgba(20, 227, 128, 0.2), 42.6667px 42.6667px 42.6667px rgba(20, 227, 128, 0.1), 106.667px 106.667px 106.667px rgba(20, 227, 128, 0.1), inset -10.6667px 0px 10.6667px rgba(0, 0, 0, 0.02), inset 10.6667px 0px 10.6667px rgba(0, 0, 0, 0.02), inset 0px -10.6667px 10.6667px rgba(0, 0, 0, 0.05), inset 0px 5.33333px 5.33333px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+}
+
 .app__footer-cards .app__footer-card:last-child {
   background-color: #f2f7fb;
 }
 
-.app__footer-cards .app__footer-card:last-child:hover {
-  box-shadow: 0 0 25px #f2f7fb;
-}
 
 .app__footer-form {
   width: 60%;
@@ -99,10 +113,6 @@
 
     textarea {
       height: 170px;
-    }
-
-    &:hover {
-      box-shadow: 0 0 25px var(--primary-color);
     }
   }
 

@@ -12,8 +12,9 @@
   flex-direction: row;
   padding: 2rem;
   border-radius: 15px;
-
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  background: linear-gradient(315deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #F0F1F5;
+  background-blend-mode: soft-light, normal;
+  box-shadow: -8.90123px -8.90123px 26.7037px #FFFFFF, 13.3518px 13.3518px 26.7037px rgba(174, 174, 192, 0.4);
   transition: all 0.3s ease-in-out;
 
   img {

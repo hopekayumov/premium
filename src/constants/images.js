@@ -23,6 +23,7 @@ import about04 from "../assets/about04.png";
 
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
+import mobile from "../assets/mobile.png";
 
 import asus from "../assets/asus.png";
 import mub from "../assets/mub.svg";
@@ -30,6 +31,7 @@ import muBig from "../assets/muBig.png";
 import vsCode from "../assets/vscode.png";
 
 const images = {
+  mobile,
   vsCode,
   muBig,
   vueSVG,
